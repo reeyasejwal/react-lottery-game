@@ -1,0 +1,91 @@
+body {
+   margin: 0;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.start-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-content {
+  text-align: center;
+  color: white;
+
+  display: flex;
+  flex-direction: column;   /* stack vertically */
+  align-items: center;      /* center horizontally */
+  gap: 20px;                /* space between title & button */
+}
+
+
+.title {
+  font-size: 70px;
+  margin-bottom: 30px;
+
+  display: flex;              /* make title a flex row */
+  align-items: center;        /* vertical align icons + text */
+  justify-content: center;    /* center whole title */
+  gap: 15px;                  /* equal spacing */
+}
+.neon-icon {
+  font-size: 60px;
+}
+.start-btn {
+  padding: 14px 36px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 12px;
+  border: 2px solid #08d9d6;
+  background: transparent;
+  color: #08d9d6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  /* Neon glow */
+  box-shadow: 0 0 8px #08d9d6,
+              inset 0 0 8px #08d9d6;
+}
+
+/* Hover effect */
+.start-btn:hover {
+  background: #08d9d6;
+  color: #000;
+  box-shadow: 0 0 15px #08d9d6,
+              0 0 30px #08d9d6,
+              inset 0 0 10px #08d9d6;
+  transform: translateY(-2px);
+}
+
+/* Click effect */
+.start-btn:active {
+  transform: scale(0.96);
+  box-shadow: 0 0 8px #08d9d6;
+}
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 6px #08d9d6, inset 0 0 6px #08d9d6;
+  }
+  50% {
+    box-shadow: 0 0 20px #08d9d6, inset 0 0 12px #08d9d6;
+  }
+  100% {
+    box-shadow: 0 0 6px #08d9d6, inset 0 0 6px #08d9d6;
+  }
+}
+
+.start-btn {
+  animation: glowPulse 2s infinite;
+}
