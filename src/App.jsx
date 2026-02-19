@@ -1,13 +1,19 @@
 import { useState } from "react";
 import Startscreen from "./startscreen";
 import Gamescreen from "./gamescreen";
+import "./App.css";
 
 function App() {
-  let [started,setstarted]=useState(false);
+  const [started, setstarted] = useState(false);   
+
   return (
-   <div>
-    {started?(<Gamescreen/>):(<Startscreen Onstart={()=>setstarted(true)}/>)}
-   </div>
+    <div>
+      {started ? (
+        <Gamescreen />
+      ) : (
+        <Startscreen Onstart={() => setstarted(true)} />
+      )}
+    </div>
   );
 }
 
