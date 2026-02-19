@@ -1,16 +1,63 @@
-# React + Vite
+🎰 React Lottery Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A stylish neon-themed Lottery Game built using React + Vite.
+Generate a random 3-digit number and test your luck — if the sum of digits equals 15, you win 🎉
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎲 Random 3-digit number generation
 
-## React Compiler
+🧮 Digit sum logic
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🏆 Win condition (Sum === 15)
 
-## Expanding the ESLint configuration
+💯 Live score tracking (+10 on win)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎉 Confetti animation on win
+
+🌈 Modern neon UI design
+
+🚀 Deployed using GitHub Pages
+
+🖥️ Live Demo
+
+👉 Live Link:
+https://reeyasejwal.github.io/react-lottery-game/
+
+🛠️ Tech Stack
+
+React
+
+Vite
+
+CSS (Neon UI Styling)
+
+JavaScript (Logic Handling)
+
+react-confetti (Win Animation)
+
+🎮 How the Game Works
+
+Click Generate Number
+
+A random 3-digit number appears
+
+The digits are split and summed
+
+If sum === 15:
+
+🎉 Congratulations message
+
+💯 Score increases by 10
+
+🎊 Confetti animation appears
+
+Otherwise:
+
+❌ Try Again message
+
+
+👩‍💻 Author
+
+Reeya Sejwal
+B.Tech CSE Student
